@@ -1,9 +1,8 @@
 def main():
-  product_ids = []
   
   with open('input.txt') as file:
-    product_ids = [line.strip().split(',') for line in file]
+    product_ranges = [[int(x) for x in item.split('-')] for item in file.read().strip().split(',')]
 
-  print(product_ids)
+  print(product_ranges)
 
 main()
