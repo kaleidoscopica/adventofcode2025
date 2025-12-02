@@ -18,7 +18,6 @@ def main():
     if pos == 0:
       times_at_zero += 1
     
-  print('The number of times the combination lock hit zero is:', times_at_zero)
-
+  print('The number of times the combination lock landed on zero is:', times_at_zero)
 
 main()
